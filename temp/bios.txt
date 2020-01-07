@@ -1,0 +1,2 @@
+Power Technology,Disable;[Optional:Disable,Energy Efficient,Custom]
+Fan Control Stepping,3;[Optional:1 - Lower Fan Speed,2,3,4,5,6,7 - Higher Fan Speed]
