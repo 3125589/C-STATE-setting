@@ -50,6 +50,8 @@
 @echo 修改电源计划中，请稍后！！
 @for /f "tokens=*" %%i in ('powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61') do set T=%%i
 @powercfg /S %T:~11,36%
+@for /f "tokens=*" %%i in ('powercfg -import %workpath%\zyxn.pow') do set T2=%%i
+powercfg /S %T2:~16,52%
 @rd /S/Q "%workpath%"
 @rd /S/Q "%cd%\tools"
 @del %0
